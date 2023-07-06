@@ -1,5 +1,7 @@
 function add(x, y) {
-  return x + y;
+  if ((x = Number(x)) && (y = Number(y))) {
+    return Number(x + y);
+  }
 }
 function subtract(x, y) {
   return x - y;
@@ -26,4 +28,9 @@ function absolute(value) {
 module.exports = {
   add: add,
   subtract: subtract,
+  multiply: multiply,
+  divide: divide,
+  modulo: modulo,
+  power: power,
+  absolute: absolute,
 };
