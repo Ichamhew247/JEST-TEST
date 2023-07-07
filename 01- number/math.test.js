@@ -99,4 +99,8 @@ describe("absolute", () => {
     let result = absolute("3");
     expect(result).toBe(3);
   });
+  it("should return absolute result ", () => {
+    let result = absolute("abc");
+    expect(result).toBe(NaN);
+  });
 });
